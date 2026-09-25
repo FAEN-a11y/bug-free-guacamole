@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Super Scienc-y</title>
-    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
-    <style>
-      body {
-        background-color: black;
-        color: white;
-      }
+    <head>
+        <title>Super Scienc-y</title>
+        <style>
 
-      @import url('https://fonts.cdnfonts.com/css/ethnocentric');
-      h1 {
-		font-family: 'Ethnocentric Rg', sans-serif;
-		text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome</h1>
-	<input type = "text">
-  </body>
+            
+            @font-face {
+                font-family: brushHand;
+                src: url("hobbitonbrushhand.ttf");
+            }
+
+            body {
+                background-color: #1f2021;
+                color: DarkCyan;
+                font-family: "Courier New", Courier, monospace;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            
+
+            .center {
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+
+            
+            .terminal {
+                color: DarkCyan;
+                border-style: none;
+                outline: none;
+                background-color: rgba(255, 255, 255, 0);
+                font-size: 50px;
+                margin: auto;
+                display: block;
+                position: absolute;
+                text-align: center;
+                left: 30%;
+                bottom: 50%;
+                font-family: "Courier New", Courier, monospace;
+                
+
+            }
+
+            .topLeft {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding: 10px;
+                width: 12%;
+                
+            }
+
+            
+            .bottomLeft {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding: 10px;
+                width: 12%;
+            }
+
+            .topRight {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                padding: 10px;
+                width: 12%;
+                mix-blend-mode: multiple;
+                
+            }
+
+            .bottomRight {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                padding: 10px;
+                width: 12%;
+                
+            }
+
+            .effect {
+                mix-blend-mode: overlay;
+                margin: auto;
+                background-color: #1f2021;
+                background-repeat: repeat;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+                width: 100%;
+                position: fixed;
+                z-index: 999;
+                opacity: 0.2;
+                pointer-events: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src = "noise.gif", class="effect">
+        <img src="image1.png", class="topLeft">
+        <img src="image.png", class="bottomLeft">
+        <img src="image3.png", class="topRight">
+        <img src="image0.png", class="bottomRight">
+        <div class = "center">
+            <input type="text", class = "terminal" autofocus>
+        </div>
+
+    </body>
+    
+    <script>
+        
+    </script>
+
 </html>
